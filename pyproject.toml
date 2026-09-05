@@ -1,0 +1,15 @@
+[project]
+name = "voxa-community"
+version = "0.3.0"
+description = "Open-source browser voice receptionist demo powered by Pipecat and Gemini Live"
+requires-python = ">=3.11"
+dependencies = [
+  "python-dotenv>=1.0,<2",
+  "pipecat-ai[google,runner,webrtc]>=1.4,<2",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8,<9"]
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
